@@ -43,11 +43,11 @@ class ImagesOfRequestActivity : DaggerAppCompatActivity() {
 
         binding.contentImage.rvImage.layoutManager =
             GridLayoutManager(this, 2, RecyclerView.VERTICAL, false)
-        val datasOfRequest: List<String>? = intent.getStringArrayListExtra(EXTRA_REPLY)
+        val datasOfRequest: List<String> = intent.getStringArrayListExtra(EXTRA_REPLY)!!
 
         imagesViewModel = injectViewModel(viewModelFactory)
-        imagesViewModel.getImageData(datasOfRequest!![0], datasOfRequest[1])
-        imagesViewModel.imageData.observe(this, observer);
+        imagesViewModel.getImageData(datasOfRequest[0], datasOfRequest[1])
+        imagesViewModel.imageData.observe(this, observer)
 
         itemTouchHelper(adapter!!).attachToRecyclerView(binding.contentImage.rvImage)
     }
