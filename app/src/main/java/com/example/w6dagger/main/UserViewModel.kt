@@ -13,6 +13,7 @@ class UserViewModel @Inject constructor(private val userUseCase: GetUsersUseCase
     val allUsers by lazy { MutableLiveData<List<User>>() }
     private val disposable = CompositeDisposable()
 
+    
     fun getAllUsers() {
         disposable.add(
             userUseCase.getAllUsers()
