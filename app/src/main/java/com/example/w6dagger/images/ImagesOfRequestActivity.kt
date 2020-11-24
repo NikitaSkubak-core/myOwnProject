@@ -25,7 +25,7 @@ class ImagesOfRequestActivity : DaggerAppCompatActivity() {
     lateinit var viewModelFactory: ViewModelProviderFactory
     lateinit var imagesViewModel: ImageViewModel
 
-    private var adapter: ImagesListAdapter? = null
+    lateinit var adapter: ImagesListAdapter
 
     lateinit var binding: ActivityImagesOfRequestBinding
 
@@ -49,7 +49,7 @@ class ImagesOfRequestActivity : DaggerAppCompatActivity() {
         imagesViewModel.getImageData(datasOfRequest[0], datasOfRequest[1])
         imagesViewModel.imageData.observe(this, observer)
 
-        itemTouchHelper(adapter!!).attachToRecyclerView(binding.contentImage.rvImage)
+        itemTouchHelper(adapter).attachToRecyclerView(binding.contentImage.rvImage)
     }
 
     private fun itemTouchHelper(adapter: ImagesListAdapter): ItemTouchHelper {
@@ -83,7 +83,7 @@ class ImagesOfRequestActivity : DaggerAppCompatActivity() {
     }
 
     private val observer: Observer<List<Image>> =
-        Observer { images -> adapter!!.setImages(images) }
+        Observer { images -> adapter.setImages(images) }
 
     companion object {
         const val EXTRA_REPLY = "com.example.android.w7dagger.REPLY"
