@@ -43,11 +43,11 @@ class ImagesListAdapter : RecyclerView.Adapter<ImageViewHolder>() {
             binding.root
         ) {
         private val listenerUpdate = View.OnClickListener { v ->
-            val id = binding.idImage.toInt()
-            val user = binding.hintUserName
-            val request = binding.request
-            val response = binding.contentDescription
-            val isChecked = !binding.check
+            val id = binding.idImage!!.toInt()
+            val user = binding.hintUserName!!
+            val request = binding.request!!
+            val response = binding.contentDescription!!
+            val isChecked = !binding.check!!
             val image = Image(id, user, request, response, isChecked)
             (v.context as ImagesOfRequestActivity).imagesViewModel.updateImage(image)
         }

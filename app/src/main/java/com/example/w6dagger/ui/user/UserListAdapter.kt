@@ -1,13 +1,11 @@
-package com.example.w6dagger.main
+package com.example.w6dagger.ui.user
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.w6dagger.dataBase.User
 import com.example.w6dagger.databinding.ItemUserBinding
-import com.example.w6dagger.main.UserListAdapter.UserViewHolder
-import javax.inject.Inject
-import javax.inject.Singleton
+import com.example.w6dagger.ui.user.UserListAdapter.UserViewHolder
 
 
 class UserListAdapter : RecyclerView.Adapter<UserViewHolder>() {
