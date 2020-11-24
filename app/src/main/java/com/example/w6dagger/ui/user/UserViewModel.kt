@@ -1,4 +1,4 @@
-package com.example.w6dagger.main
+package com.example.w6dagger.ui.user
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

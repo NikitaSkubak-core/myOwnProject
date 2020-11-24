@@ -9,7 +9,7 @@
 
         <variable
             name="usermodel"
-            type="com.example.w6dagger.main.UserViewModel" />
+            type="com.example.w6dagger.ui.user.UserViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

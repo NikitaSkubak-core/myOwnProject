@@ -1,4 +1,4 @@
-package com.example.w6dagger.main
+package com.example.w6dagger.ui.user
 
 import android.content.Intent
 import android.os.Bundle
@@ -15,11 +15,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.example.w6dagger.gallery.GalleryActivity
 import com.example.w6dagger.R
 import com.example.w6dagger.dataBase.User
 import com.example.w6dagger.databinding.ActivityMainBinding
+import com.example.w6dagger.gallery.GalleryActivity
 import com.example.w6dagger.gallery.internalGallery.InternalGalleryActivity
+import com.example.w6dagger.main.ViewModelProviderFactory
 import com.example.w6dagger.request.ShowRequestsActivity
 import com.facebook.stetho.Stetho
 import dagger.android.support.DaggerAppCompatActivity
@@ -27,7 +28,7 @@ import kotlinx.android.synthetic.main.content_main.view.*
 import java.util.*
 import javax.inject.Inject
 
-class MainActivity : DaggerAppCompatActivity() {
+class UserActivity : DaggerAppCompatActivity() {
     lateinit var adapter: UserListAdapter
 
     @Inject
@@ -80,7 +81,7 @@ class MainActivity : DaggerAppCompatActivity() {
                 val position = viewHolder.adapterPosition
                 val myUser = adapter!!.getUserAtPosition(position)
                 Toast.makeText(
-                    this@MainActivity, "Deleting " +
+                    this@UserActivity, "Deleting " +
                             myUser.userName, Toast.LENGTH_LONG
                 ).show()
 
@@ -140,7 +141,7 @@ class MainActivity : DaggerAppCompatActivity() {
     }
 
     fun clickToFab() {
-        val intent = Intent(this@MainActivity, AddUserActivity::class.java)
+        val intent = Intent(this@UserActivity, AddUserActivity::class.java)
         startActivityForResult(intent, NEW_User_ACTIVITY_REQUEST_CODE)
     }
 
