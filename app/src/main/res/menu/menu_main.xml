@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.finalwee4project.com.example.w6.activities.main.MainActivity">
+    <item
+        android:id="@+id/clear_data"
+        android:orderInCategory="100"
+        android:title="delete users"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/get_gallery"
+        android:orderInCategory="100"
+        android:title="@string/gallery"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/get_internal_gallery"
+        android:orderInCategory="100"
+        android:title="@string/internal_gallery"
+        app:showAsAction="never" />
+</menu>
