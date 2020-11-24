@@ -1,4 +1,4 @@
-package com.example.w6dagger.main
+package com.example.w6dagger.ui.user
 
 import android.content.Intent
 import android.os.Bundle

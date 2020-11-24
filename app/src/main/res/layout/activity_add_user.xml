@@ -10,7 +10,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.w6dagger.main.AddUserActivity">
+        tools:context="com.example.w6dagger.ui.user.AddUserActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
