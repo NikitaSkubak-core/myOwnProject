@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">W7Dagger</string>
+    <string name="favoriteImages">Favorites</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hint_word">User...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="clear_all_data">Clear requests</string>
+    <string name="title_activity_show_requests">ShowRequestsActivity</string>
+    <string name="title_activity_images_of_request">ImagesOfRequestActivity</string>
+    <string name="title_activity_favorite_images">FavoriteImagesActivity</string>
+    <string name="clear_all_users">clear users</string>
+    <string name="normal_map">normal map</string>
+    <string name="hybrid_map">hybrid map</string>
+    <string name="satellite_map">satellite map</string>
+    <string name="terrain_map">terrain map</string>
+    <string name="dropped_pin">some text</string>
+    <string name="map">open map</string>
+    <string name="gallery">gallery</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="test">test</string>
+    <string name="internal_gallery">internal gallery</string>
+    <string name="photo">photo</string>
+    <string name="user_error_putting">username must containg at least 1 character</string>
+    <string name="request_error_putting">request must be not empty</string>
+</resources>
